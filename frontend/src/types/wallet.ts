@@ -11,3 +11,9 @@ export interface UserData {
   };
 }
 
+export interface WalletContextValue {
+  state: WalletState;
+  userData: UserData | null;
+  connect: () => Promise<void>;
+  disconnect: () => void;
+}
