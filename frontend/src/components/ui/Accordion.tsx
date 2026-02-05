@@ -10,3 +10,8 @@ interface AccordionItem {
   content: ReactNode;
 }
 
+interface AccordionProps {
+  items: AccordionItem[];
+  allowMultiple?: boolean;
+}
+
