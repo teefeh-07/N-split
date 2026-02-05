@@ -13,3 +13,7 @@ export function isValidTokenName(name: string): boolean {
   return name.length >= 3 && name.length <= 32;
 }
 
+export function isValidTokenSymbol(symbol: string): boolean {
+  return /^[A-Z]{2,6}$/.test(symbol);
+}
+
