@@ -19,3 +19,11 @@ cp .env.example .env
 2. Run `clarinet check`
 3. Deploy to testnet
 
+## Frontend Deployment
+
+```bash
+cd frontend
+npm run build
+npm run start
+```
+
