@@ -7,3 +7,8 @@ export async function getAccountInfo(address: string) {
   return response.data;
 }
 
+export async function getBalance(address: string) {
+  const response = await api.get(`/extended/v1/address/${address}/balances`);
+  return response.data;
+}
+
