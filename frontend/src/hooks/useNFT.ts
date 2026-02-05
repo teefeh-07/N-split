@@ -16,3 +16,19 @@ interface UseNFTResult {
 export function useNFT(): UseNFTResult {
   const [isLoading, setIsLoading] = useState(false);
 
+  const mintNFT = useCallback(async (uri: string) => {
+    setIsLoading(true);
+    try {
+      await openContractCall({
+        network: new StacksTestnet(),
+        contractAddress: "ST...",
+        contractName: "serenehub-nft-marketplace",
+        functionName: "mint",
+        functionArgs: [stringAsciiCV(uri)],
+        postConditionMode: PostConditionMode.Allow,
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
