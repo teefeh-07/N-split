@@ -32,3 +32,19 @@ export function useNFT(): UseNFTResult {
     }
   }, []);
 
+  const listNFT = useCallback(async (tokenId: number, price: number) => {
+    setIsLoading(true);
+    try {
+      await openContractCall({
+        network: new StacksTestnet(),
+        contractAddress: "ST...",
+        contractName: "serenehub-nft-marketplace",
+        functionName: "list-nft",
+        functionArgs: [uintCV(tokenId), uintCV(price * 1_000_000)],
+        postConditionMode: PostConditionMode.Allow,
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
