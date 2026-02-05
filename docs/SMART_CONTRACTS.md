@@ -22,3 +22,13 @@ The staking vault allows users to stake STX and earn rewards.
 - `claim-rewards` - Claim accumulated rewards
 - `get-stake-info` - View staking position
 
+## Token Launchpad
+
+Create and manage SIP-010 compliant tokens.
+
+### Functions
+
+- `create-token` - Deploy new token
+- `get-token-info` - Get token metadata
+- `transfer` - Transfer tokens between addresses
+
