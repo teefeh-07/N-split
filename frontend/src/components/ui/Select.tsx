@@ -9,3 +9,9 @@ interface SelectOption {
   label: string;
 }
 
+interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
+  label?: string;
+  options: SelectOption[];
+  error?: string;
+}
+
