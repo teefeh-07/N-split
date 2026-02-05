@@ -18,3 +18,10 @@ cd contracts
 clarinet test
 ```
 
+## Coverage
+
+Run with coverage:
+```bash
+npm run test:coverage
+```
+
