@@ -7,3 +7,5 @@ export const CONTRACT_NAMES = {
   SERVICE_REGISTRY: "serenehub-service-registry",
 } as const;
 
+export const DEPLOYER_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM";
+
