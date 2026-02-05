@@ -13,3 +13,13 @@ describe('isValidStxAddress', () => {
   });
 });
 
+describe('isValidAmount', () => {
+  it('should return true for positive numbers', () => {
+    expect(isValidAmount('100')).toBe(true);
+  });
+
+  it('should return false for zero', () => {
+    expect(isValidAmount('0')).toBe(false);
+  });
+});
+
