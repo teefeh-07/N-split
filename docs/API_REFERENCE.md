@@ -10,3 +10,9 @@ All API calls require wallet authentication via Stacks Connect.
 
 ## Endpoints
 
+### NFT Marketplace
+
+- `mint-nft` - Mint a new NFT
+- `list-nft` - List NFT for sale
+- `buy-nft` - Purchase listed NFT
+
