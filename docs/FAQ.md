@@ -20,3 +20,13 @@ Connect your wallet, navigate to the Marketplace, click "Mint NFT", upload your 
 
 The platform charges a 2.5% fee on all NFT sales.
 
+## Staking
+
+### What is the minimum stake amount?
+
+The minimum stake amount is 100 STX.
+
+### How are rewards calculated?
+
+Rewards are calculated based on your stake amount, lock duration, and the current reward rate.
+
