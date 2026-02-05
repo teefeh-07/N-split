@@ -13,3 +13,7 @@ interface UseStakingResult {
   error: string | null;
 }
 
+export function useStaking(): UseStakingResult {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
