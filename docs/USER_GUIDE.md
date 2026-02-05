@@ -31,3 +31,16 @@ Click "Connect Wallet" in the navbar to get started.
 2. Click on one you like
 3. Click "Buy" and confirm transaction
 
+## Staking STX
+
+### How to Stake
+
+1. Go to the Staking page
+2. Enter the amount of STX to stake
+3. Choose lock duration
+4. Confirm transaction
+
+### Claiming Rewards
+
+Rewards accumulate automatically. Click "Claim" to receive them.
+
