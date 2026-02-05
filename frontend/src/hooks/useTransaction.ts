@@ -13,3 +13,25 @@ interface UseTransactionResult {
   reset: () => void;
 }
 
+export function useTransaction(): UseTransactionResult {
+  const [status, setStatus] = useState<TxStatus>('idle');
+  const [txId, setTxId] = useState<string | null>(null);
+
+  const checkStatus = useCallback(async (id: string) => {
+    setTxId(id);
+    setStatus('pending');
+    try {
+      const tx = await getTransaction(id);
+      setStatus(tx.tx_status === 'success' ? 'success' : 'failed');
+    } catch {
+      setStatus('failed');
+    }
+  }, []);
+
+  const reset = useCallback(() => {
+    setStatus('idle');
+    setTxId(null);
+  }, []);
+
+  return { status, txId, checkStatus, reset };
+}
