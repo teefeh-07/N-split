@@ -12,3 +12,8 @@ export async function getBalance(address: string) {
   return response.data;
 }
 
+export async function getTransaction(txId: string) {
+  const response = await api.get(`/extended/v1/tx/${txId}`);
+  return response.data;
+}
+
