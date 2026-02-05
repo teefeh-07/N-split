@@ -32,3 +32,13 @@ Create and manage SIP-010 compliant tokens.
 - `get-token-info` - Get token metadata
 - `transfer` - Transfer tokens between addresses
 
+## Service Registry
+
+Register and pay for services on the platform.
+
+### Functions
+
+- `register-service` - Register as service provider
+- `pay-service` - Pay for a service
+- `get-service-info` - View service details
+
