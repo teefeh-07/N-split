@@ -1,0 +1,2 @@
+// Wallet Type Definitions
+
