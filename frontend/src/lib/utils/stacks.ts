@@ -10,3 +10,7 @@ export function stxToMicro(stx: number): number {
   return Math.floor(stx * 1_000_000);
 }
 
+export function microToStx(micro: number): number {
+  return micro / 1_000_000;
+}
+
