@@ -21,3 +21,12 @@ export interface Token {
   totalSupply: number;
 }
 
+export interface Service {
+  id: number;
+  provider: string;
+  name: string;
+  description: string;
+  price: number;
+  active: boolean;
+}
+
