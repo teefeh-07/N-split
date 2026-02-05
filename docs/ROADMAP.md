@@ -21,3 +21,10 @@
 - [ ] Cross-chain integration
 - [ ] Governance token launch
 
+## Phase 4: Expansion (Q4 2024)
+
+- [ ] DAO governance
+- [ ] NFT lending and borrowing
+- [ ] Yield farming
+- [ ] Institutional features
+
