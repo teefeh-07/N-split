@@ -44,3 +44,14 @@ Click "Connect Wallet" in the navbar to get started.
 
 Rewards accumulate automatically. Click "Claim" to receive them.
 
+## Token Launchpad
+
+### Creating a Token
+
+1. Navigate to Launchpad
+2. Fill in token details:
+   - Name
+   - Symbol
+   - Total Supply
+3. Click "Create Token"
+
