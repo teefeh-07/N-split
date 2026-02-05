@@ -16,3 +16,6 @@ export const ERROR_MESSAGES: Record<string, string> = {
   [CONTRACT_ERRORS.ALREADY_EXISTS]: "Resource already exists",
 };
 
+export function getErrorMessage(code: string): string {
+  return ERROR_MESSAGES[code] || "An unknown error occurred";
+}
