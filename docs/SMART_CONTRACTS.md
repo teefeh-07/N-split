@@ -42,3 +42,9 @@ Register and pay for services on the platform.
 - `pay-service` - Pay for a service
 - `get-service-info` - View service details
 
+## Deployment
+
+```bash
+clarinet deployments apply -p deployments/default.devnet-plan.yaml
+```
+
