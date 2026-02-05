@@ -22,3 +22,8 @@ All API calls require wallet authentication via Stacks Connect.
 - `unstake` - Unstake and claim rewards
 - `claim-rewards` - Claim pending rewards
 
+### Token Launchpad
+
+- `create-token` - Create new SIP-010 token
+- `get-token-info` - Get token metadata
+
