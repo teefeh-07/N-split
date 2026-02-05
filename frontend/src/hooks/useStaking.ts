@@ -36,3 +36,22 @@ export function useStaking(): UseStakingResult {
     }
   }, []);
 
+  const unstake = useCallback(async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      await openContractCall({
+        network: new StacksTestnet(),
+        contractAddress: "ST...",
+        contractName: "serenehub-staking-vault",
+        functionName: "unstake",
+        functionArgs: [],
+        postConditionMode: PostConditionMode.Allow,
+      });
+    } catch (e: any) {
+      setError(e.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
