@@ -22,3 +22,6 @@ export function CardContent({ className = '', children, ...props }: CardProps) {
   return <div className={`p-6 ${className}`} {...props}>{children}</div>;
 }
 
+export function CardFooter({ className = '', children, ...props }: CardProps) {
+  return <div className={`p-6 bg-gray-50 rounded-b-xl ${className}`} {...props}>{children}</div>;
+}
