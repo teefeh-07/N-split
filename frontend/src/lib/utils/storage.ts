@@ -19,3 +19,8 @@ export function setStorageItem<T>(key: string, value: T): void {
   }
 }
 
+export function removeStorageItem(key: string): void {
+  if (typeof window === 'undefined') return;
+  localStorage.removeItem(key);
+}
+
