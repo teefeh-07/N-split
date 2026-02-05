@@ -48,3 +48,19 @@ export function useNFT(): UseNFTResult {
     }
   }, []);
 
+  const buyNFT = useCallback(async (tokenId: number) => {
+    setIsLoading(true);
+    try {
+      await openContractCall({
+        network: new StacksTestnet(),
+        contractAddress: "ST...",
+        contractName: "serenehub-nft-marketplace",
+        functionName: "buy-nft",
+        functionArgs: [uintCV(tokenId)],
+        postConditionMode: PostConditionMode.Allow,
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
