@@ -1,27 +1,2 @@
 # Contributing Guide
 
-## Getting Started
-
-Thank you for your interest in contributing to SereneHub!
-
-## Development Setup
-
-1. Fork the repository
-2. Clone your fork
-3. Install dependencies: `npm install`
-4. Start development server: `npm run dev`
-
-## Code Style
-
-- Use TypeScript
-- Follow ESLint rules
-- Write meaningful commit messages
-- Add tests for new features
-
-## Pull Request Guidelines
-
-1. Create a feature branch
-2. Make your changes
-3. Write tests
-4. Submit PR with clear description
-
