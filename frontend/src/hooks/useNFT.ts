@@ -13,3 +13,6 @@ interface UseNFTResult {
   isLoading: boolean;
 }
 
+export function useNFT(): UseNFTResult {
+  const [isLoading, setIsLoading] = useState(false);
+
