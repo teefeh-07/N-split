@@ -6,3 +6,10 @@
 - Clarinet CLI
 - GitHub account
 
+## Environment Setup
+
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
