@@ -17,3 +17,22 @@ export function useStaking(): UseStakingResult {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  const stake = useCallback(async (amount: number) => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      await openContractCall({
+        network: new StacksTestnet(),
+        contractAddress: "ST...",
+        contractName: "serenehub-staking-vault",
+        functionName: "stake",
+        functionArgs: [uintCV(amount * 1_000_000)],
+        postConditionMode: PostConditionMode.Allow,
+      });
+    } catch (e: any) {
+      setError(e.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
