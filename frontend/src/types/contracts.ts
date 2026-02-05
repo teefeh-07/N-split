@@ -8,3 +8,9 @@ export interface NFT {
   isListed: boolean;
 }
 
+export interface StakePosition {
+  amount: number;
+  stakedAt: number;
+  rewards: number;
+}
+
