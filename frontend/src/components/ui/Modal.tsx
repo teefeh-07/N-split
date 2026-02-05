@@ -4,3 +4,10 @@
 
 import { ReactNode, useEffect } from 'react';
 
+interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  title?: string;
+  children: ReactNode;
+}
+
