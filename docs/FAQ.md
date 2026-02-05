@@ -30,3 +30,16 @@ The minimum stake amount is 100 STX.
 
 Rewards are calculated based on your stake amount, lock duration, and the current reward rate.
 
+## Token Launchpad
+
+### Can anyone create a token?
+
+Yes, anyone with a connected wallet can create a SIP-010 compliant token.
+
+### What information is needed?
+
+- Token Name
+- Token Symbol (2-6 characters)
+- Total Supply
+- Decimals (usually 6)
+
