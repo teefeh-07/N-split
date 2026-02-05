@@ -16,3 +16,18 @@ SereneHub supports multiple wallet providers:
 
 Click "Connect Wallet" in the navbar to get started.
 
+## NFT Marketplace
+
+### Minting NFTs
+
+1. Navigate to the Marketplace
+2. Click "Mint NFT"
+3. Upload your artwork
+4. Set metadata and mint
+
+### Buying NFTs
+
+1. Browse available NFTs
+2. Click on one you like
+3. Click "Buy" and confirm transaction
+
