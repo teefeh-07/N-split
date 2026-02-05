@@ -23,3 +23,13 @@ describe('isValidAmount', () => {
   });
 });
 
+describe('isValidTokenName', () => {
+  it('should accept valid names', () => {
+    expect(isValidTokenName('MyToken')).toBe(true);
+  });
+
+  it('should reject short names', () => {
+    expect(isValidTokenName('AB')).toBe(false);
+  });
+});
+
