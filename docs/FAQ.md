@@ -43,3 +43,13 @@ Yes, anyone with a connected wallet can create a SIP-010 compliant token.
 - Total Supply
 - Decimals (usually 6)
 
+## Troubleshooting
+
+### Transaction pending for too long?
+
+Stacks transactions typically confirm within 10-30 minutes. If it takes longer, check the network status.
+
+### Wallet not connecting?
+
+Try refreshing the page, clearing cache, or using a different browser.
+
