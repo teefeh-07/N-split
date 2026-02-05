@@ -24,3 +24,8 @@ export function removeStorageItem(key: string): void {
   localStorage.removeItem(key);
 }
 
+export const STORAGE_KEYS = {
+  THEME: 'serenehub_theme',
+  LAST_WALLET: 'serenehub_last_wallet',
+  FAVORITES: 'serenehub_favorites',
+} as const;
