@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import { ReownProvider } from '@/context/ReownContext';
 import { WalletProvider } from '@/context/WalletContext';
 import { ToastProvider } from '@/context/ToastContext';
-import { StacksProvider } from '@/components/providers/StacksProvider';
+import { StacksProvider } from '@/context/StacksContext';
 
 /**
  * Application Global Provider
