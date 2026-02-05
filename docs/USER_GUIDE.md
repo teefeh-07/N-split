@@ -55,3 +55,18 @@ Rewards accumulate automatically. Click "Claim" to receive them.
    - Total Supply
 3. Click "Create Token"
 
+## Services
+
+### Registering as a Provider
+
+1. Go to Services page
+2. Click "Register Service"
+3. Fill in service details
+4. Set your pricing
+
+### Hiring a Service
+
+1. Browse available services
+2. Select a provider
+3. Pay and receive service
+
