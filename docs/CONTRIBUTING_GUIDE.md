@@ -18,3 +18,10 @@ Thank you for your interest in contributing to SereneHub!
 - Write meaningful commit messages
 - Add tests for new features
 
+## Pull Request Guidelines
+
+1. Create a feature branch
+2. Make your changes
+3. Write tests
+4. Submit PR with clear description
+
