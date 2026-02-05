@@ -11,3 +11,10 @@ Thank you for your interest in contributing to SereneHub!
 3. Install dependencies: `npm install`
 4. Start development server: `npm run dev`
 
+## Code Style
+
+- Use TypeScript
+- Follow ESLint rules
+- Write meaningful commit messages
+- Add tests for new features
+
