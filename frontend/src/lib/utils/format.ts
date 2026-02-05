@@ -16,3 +16,10 @@ export function formatTokenAmount(amount: number, decimals = 6) {
   return (amount / Math.pow(10, decimals)).toLocaleString('en-US', { maximumFractionDigits: decimals });
 }
 
+export function formatDate(timestamp: number) {
+  return new Date(timestamp * 1000).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+}
