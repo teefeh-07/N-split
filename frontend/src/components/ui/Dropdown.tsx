@@ -4,3 +4,8 @@
 
 import { ReactNode, useState, useRef, useEffect } from 'react';
 
+interface DropdownProps {
+  trigger: ReactNode;
+  children: ReactNode;
+}
+
