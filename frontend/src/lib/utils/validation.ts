@@ -9,3 +9,7 @@ export function isValidAmount(amount: string): boolean {
   return !isNaN(num) && num > 0;
 }
 
+export function isValidTokenName(name: string): boolean {
+  return name.length >= 3 && name.length <= 32;
+}
+
