@@ -13,3 +13,9 @@ export interface PaginatedResponse<T> {
   limit: number;
 }
 
+export interface TransactionStatus {
+  txId: string;
+  status: "pending" | "success" | "failed";
+  blockHeight?: number;
+}
+
