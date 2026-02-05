@@ -12,3 +12,7 @@ export function formatCurrency(amount: number, currency = 'USD') {
   }).format(amount);
 }
 
+export function formatTokenAmount(amount: number, decimals = 6) {
+  return (amount / Math.pow(10, decimals)).toLocaleString('en-US', { maximumFractionDigits: decimals });
+}
+
