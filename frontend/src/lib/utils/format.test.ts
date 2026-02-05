@@ -20,3 +20,8 @@ describe('formatCurrency', () => {
   });
 });
 
+describe('formatTokenAmount', () => {
+  it('should format token amounts correctly', () => {
+    expect(formatTokenAmount(1000000, 6)).toBe('1');
+  });
+});
