@@ -27,3 +27,11 @@ All API calls require wallet authentication via Stacks Connect.
 - `create-token` - Create new SIP-010 token
 - `get-token-info` - Get token metadata
 
+## Error Codes
+
+| Code | Description |
+|------|-------------|
+| u100 | Unauthorized |
+| u101 | Insufficient funds |
+| u102 | Invalid parameters |
+
