@@ -11,3 +11,10 @@ cd frontend
 npm run test
 ```
 
+## Contract Testing
+
+```bash
+cd contracts
+clarinet test
+```
+
