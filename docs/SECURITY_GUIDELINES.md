@@ -18,3 +18,7 @@ This document outlines security best practices for SereneHub development.
 - Use secure wallet connections
 - Implement proper error handling
 
+## Reporting Vulnerabilities
+
+If you discover a security vulnerability, please report it to security@serenehub.app
+
