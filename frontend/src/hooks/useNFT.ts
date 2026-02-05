@@ -64,3 +64,5 @@ export function useNFT(): UseNFTResult {
     }
   }, []);
 
+  return { mintNFT, listNFT, buyNFT, isLoading };
+}
