@@ -31,3 +31,21 @@ export function useService(): UseServiceResult {
     }
   }, []);
 
+  const payService = useCallback(async (serviceId: number) => {
+    setIsLoading(true);
+    try {
+      await openContractCall({
+        network: new StacksTestnet(),
+        contractAddress: "ST...",
+        contractName: "serenehub-service-registry",
+        functionName: "pay-service",
+        functionArgs: [uintCV(serviceId)],
+        postConditionMode: PostConditionMode.Allow,
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  return { registerService, payService, isLoading };
+}
