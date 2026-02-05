@@ -55,3 +55,5 @@ export function useStaking(): UseStakingResult {
     }
   }, []);
 
+  return { stake, unstake, isLoading, error };
+}
