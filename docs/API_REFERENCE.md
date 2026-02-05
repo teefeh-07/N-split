@@ -16,3 +16,9 @@ All API calls require wallet authentication via Stacks Connect.
 - `list-nft` - List NFT for sale
 - `buy-nft` - Purchase listed NFT
 
+### Staking
+
+- `stake` - Stake STX tokens
+- `unstake` - Unstake and claim rewards
+- `claim-rewards` - Claim pending rewards
+
