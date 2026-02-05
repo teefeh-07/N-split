@@ -4,3 +4,8 @@
 
 import { ReactNode, useState } from 'react';
 
+interface TooltipProps {
+  content: string;
+  children: ReactNode;
+}
+
