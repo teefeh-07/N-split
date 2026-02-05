@@ -13,3 +13,13 @@ describe('getStorageItem', () => {
   });
 });
 
+describe('setStorageItem', () => {
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
+  it('should save value to localStorage', () => {
+    setStorageItem('test', { value: 123 });
+    expect(localStorage.getItem('test')).toBe('{"value":123}');
+  });
+});
