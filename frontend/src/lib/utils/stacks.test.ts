@@ -10,3 +10,10 @@ describe('stxToMicro', () => {
   });
 });
 
+describe('microToStx', () => {
+  it('should convert microSTX to STX', () => {
+    expect(microToStx(1_000_000)).toBe(1);
+    expect(microToStx(500_000)).toBe(0.5);
+  });
+});
+
