@@ -14,3 +14,9 @@ describe('truncateAddress', () => {
   });
 });
 
+describe('formatCurrency', () => {
+  it('should format USD correctly', () => {
+    expect(formatCurrency(1234.56)).toBe('$1,234.56');
+  });
+});
+
